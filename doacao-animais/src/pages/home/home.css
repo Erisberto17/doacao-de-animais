@@ -1,0 +1,86 @@
+/* Estilos para a barra de navegação */
+#body{
+    background-color: #e2e2e2;
+    padding: 0;
+    margin: 0;
+}
+
+h2{
+  font-size: 1.2em;
+  text-align: center;
+  margin: 20px 0 0 7%;
+}
+hr{
+  margin-top: 30px;
+  width: 95%;
+}
+.filtragem{
+  margin: 0 3%;
+  display: flex;
+  font-family: helvetica;
+  align-items:last baseline;
+  justify-content: space-around;
+}
+  .filtragem p{
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+  .filtragem a{
+    margin: auto 0;
+    color: rgb(77, 77, 77);  
+    text-decoration: none;
+    font-size: 100%;
+    transition: .5s;
+    text-align: center;
+  
+  }
+  
+  .filtragem a:hover{
+    color: rgb(44, 44, 44);
+    transform: scale(1.1);
+    box-shadow: 0 10px 10px solid black;
+  }
+  .filtragem img{
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    width: 2.7em;
+    transition: .5s;
+  }
+section{
+  display: flex;
+}
+.anuncio-1{
+  background-color: #f3aa19;
+  width: 99%; height: 60px;
+  margin: 1% 1% .5% .5%;
+
+  text-align: center;
+}
+.anuncio-1 img{
+    width: 100%;
+    height: 60px;
+    
+}
+.anuncio-lado-1{
+  background-color: #ac208e;
+  width: 200px; height: 600px;
+  margin: 1% 1%;
+  
+}.anuncio-lado-1 img{
+    width: 100% ;
+    margin: auto;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: none;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: grey;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: none;  /* creates padding around scroll thumb */
+}

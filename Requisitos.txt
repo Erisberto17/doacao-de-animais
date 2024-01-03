@@ -1,0 +1,9 @@
+OQUE PRECISA PARA REGISTRAR UM ANIMAL
+
+0ºFoto do Animal, minimo 3.
+1ºTipo do Animal(cachorro, gato, passarinho, etc...).
+2ºRaça do Animal.
+3ºSexo do Animal.
+4ºPossivel nome.(Opcional)
+5ºtempo de vida.
+6ºPossui carterinha de Vacinação(radio box com SIM e NÃO).

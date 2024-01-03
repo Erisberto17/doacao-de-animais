@@ -1,0 +1,109 @@
+
+nav {
+  background-color: rgba(204, 176, 139, 0.952);
+  margin: auto ;
+  padding: 10px 20px; /* Espaçamento interno da barra de navegação */
+  box-shadow: 1px 0 10px 1px rgba(0, 0, 0, 0.096);
+  max-height:4em;
+  font-family: arial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2em;
+  flex-grow: 1;
+  
+
+}
+
+  nav #pagAtual{
+    text-decoration: none;
+    color: #fff; /* Texto branco */
+    margin: 0 10px;
+    text-shadow: 0 0 2px black;
+    font-weight: bolder;
+    font-family: Helvetica;
+    font-size: 1.5em;
+  
+  }
+  nav #nome {
+    font-family: arial;
+    font-weight: bolder;
+    text-shadow: 0 0 3px  rgb(102, 102, 102);
+    color: rgb(65, 64, 64);
+    font-size: 1.3em;
+    position: relative;
+
+
+  }
+  nav ul li button{
+    position: relative;
+    background: none;
+    font-size:1.2em;
+    z-index: 4;
+    border: none;
+    transform: rotate(90deg);
+    transition: background-color 0.3s ease;
+  }
+  button.fechar .botao-texto {
+    transform: rotate(90deg); /* Adiciona um estilo condicional para a transformação (rotação) ao fechar o menu */
+  }
+  .botao-texto {
+    
+    right: 2px;
+    top: 5px;
+    position: relative;
+
+    transition: transform 0.3s ease; /* Adiciona uma transição suave para a mudança de transformação (rotação) */
+  }
+  nav ul #menu {
+    font-size: 1.5em;   
+    transition: .5s;
+  }
+  nav ul li .menu-hidden{
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    right: -.2em;
+    margin: 1em;
+    padding: 20px 10px;
+    width: 7em;
+    height: 10em;
+    text-align: center;
+    flex-direction: column;
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.205); 
+    background-color: rgb(218, 193, 149);
+    border-radius: 7px ;
+    cursor: pointer;
+    z-index: 3;
+  }
+  nav ul .menu-hidden a{
+    color: rgb(226, 226, 226);
+    font-size: .8em;
+    font-weight: bolder;
+    margin: 3px;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.555);
+    text-decoration-line: none;
+    transition: .3s;
+  }
+  nav ul .menu-hidden a:hover{
+    transform: scale(1.05);
+    
+  }
+
+  .show {
+    display: flex;
+    position: fixed;
+    z-index: 10;
+  }
+  
+  .hide {
+    display: none;
+  }
